@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/appbackground"
+    tools:context=".suppliers.LoginandRegisterActivity">
+
+
+    <TextView
+        android:id="@+id/customers"
+        android:layout_width="302dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="641dp"
+        android:text="דף הרשמה/התחברות"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <EditText
+        android:id="@+id/login_username"
+        android:layout_width="401dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="211dp"
+        android:layout_marginBottom="464dp"
+        android:textStyle="bold"
+        android:hint="שם משתמש" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="401dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="391dp"
+        android:textStyle="bold"
+        android:hint="סיסמא"
+        android:layout_below="@+id/login_username"/>
+
+    <EditText
+        android:id="@+id/repeat_password"
+        android:layout_width="401dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_password"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="371dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="312dp"
+        android:textStyle="bold"
+        android:hint="חזור על הסיסמא" />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="401dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="506dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="157dp"
+        android:background="@drawable/buttonback"
+        android:text="הרשמה"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="401dp"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="592dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/buttonback"
+        android:text="משתמש קיים? הכנס לדף ההתחברות"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/customers"
+        app:layout_constraintVertical_bias="0.264" />
+
+    <Button
+        android:id="@+id/previous_button"
+        android:layout_width="98dp"
+        android:layout_height="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="681dp"
+        android:layout_marginEnd="296dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/buttonback"
+        android:text="הקודם"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</RelativeLayout>
+
+
+
