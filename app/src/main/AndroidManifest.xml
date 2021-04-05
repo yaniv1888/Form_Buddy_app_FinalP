@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.testapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Form Buddy"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".customers.Upload"></activity>
+        <activity android:name=".customers.Constants" />
+        <activity android:name=".suppliers.ListUserPackActivity" />
+        <activity
+            android:name=".suppliers.LoginActivity"
+            android:label="SupLoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".suppliers.LoginandRegisterActivity"
+            android:label="LoginandRegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".suppliers.SupCovActivity"
+            android:label="@string/title_activity_sup_cov"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".suppliers.SupTaxActivity"
+            android:label="@string/title_activity_sup_tax"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".suppliers.SupMedicalActivity"
+            android:label="@string/title_activity_sup_medical"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".suppliers.SupmailpackActivity"
+            android:label="@string/title_activity_supmailpack"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".customers.CovActivity"
+            android:label="@string/title_activity_cov"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".suppliers.SuppliersActivity"
+            android:label="@string/title_activity_suppliers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".customers.CMedicalActivity"
+            android:label="@string/title_activity_c_medical"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".customers.CTaxActivity"
+            android:label="@string/title_activity_tax"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".customers.CmailpackActivity"
+            android:label="@string/title_activity_cmailpack"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".customers.CustomersActivity"
+            android:label="@string/title_activity_customers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity2"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

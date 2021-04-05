@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">TESTAPP</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_customers">CustomersActivity</string>
+    <string name="title_activity_cmailpack">CmailpackActivity</string>
+    <string name="title_activity_tax">TaxActivity</string>
+    <string name="title_activity_c_medical">CMedicalActivity</string>
+    <string name="title_activity_suppliers">SuppliersActivity</string>
+    <string name="title_activity_cov">CovActivity</string>
+    <string name="title_activity_supmailpack">SupmailpackActivity</string>
+    <string name="title_activity_sup_medical">SupMedicalActivity</string>
+    <string name="title_activity_sup_tax">SupTaxActivity</string>
+    <string name="title_activity_sup_cov">SupCovActivity</string>
+</resources>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cmailpackbackg"
+    tools:context=".customers.CmailpackActivity">
+
+
+    <TextView
+        android:id="@+id/package_text"
+        android:layout_width="217dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="686dp"
+        android:text="חבילות דואר"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/Cname_text"
+        android:layout_width="214dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="195dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="588dp"
+        android:text="הכנס שם מלא:"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+
+        android:id="@+id/editCnametext"
+        android:layout_width="190dp"
+        android:layout_height="39dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="554dp"
+        android:inputType="textPersonName">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/Id_text"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="275dp"
+        android:layout_marginTop="186dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="523dp"
+        android:text="הכנס ת.ז:"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+
+        android:id="@+id/editIDtext"
+        android:layout_width="190dp"
+        android:layout_height="39dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="470dp"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/mail_text"
+        android:layout_width="112dp"
+        android:layout_height="21dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="297dp"
+        android:layout_marginTop="267dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="443dp"
+        android:text="הכנס מייל:"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+
+        android:id="@+id/editMailtext"
+        android:layout_width="190dp"
+        android:layout_height="39dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="396dp"
+        android:inputType="textEmailAddress">
+
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/details_text"
+        android:layout_width="wrap_content"
+        android:layout_height="156dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="251dp"
+        android:layout_marginTop="521dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="53dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Cpackbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="454dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="255dp"
+        android:background="@drawable/buttonback"
+        android:text="הכנס"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/previous_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="320dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/buttonback"
+        android:text="הקודם"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/PhoneNumber_text"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="347dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="363dp"
+        android:text="הכנס מספר פלאפון:"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+
+        android:id="@+id/editPhonetext"
+        android:layout_width="190dp"
+        android:layout_height="39dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="317dp"
+        android:inputType="textPersonName" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="175dp"
+        android:layout_height="115dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="241dp"
+        android:layout_marginBottom="587dp"
+        app:srcCompat="@drawable/ic_baseline_local_post_office_24" />
+
+
+</RelativeLayout>

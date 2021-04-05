@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/medicalbackg"
+    tools:context=".customers.CmailpackActivity">
+
+
+    <TextView
+        android:id="@+id/medical_text"
+        android:layout_width="127dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="684dp"
+        android:text="תיק רפואי"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/Cname_text"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="218dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="661dp"
+        android:text="הכנס שם מלא:"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+
+        android:id="@+id/editCnametext"
+        android:layout_width="190dp"
+        android:layout_height="39dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-18dp"
+        android:layout_marginBottom="620dp"
+        android:inputType="textPersonName">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/Id_text"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="277dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="590dp"
+        android:text="הכנס ת.ז:" />
+
+    <EditText
+
+        android:id="@+id/editIDtext"
+        android:layout_width="190dp"
+        android:layout_height="39dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="552dp"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/mail_text"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="112dp"
+        android:layout_height="21dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="297dp"
+        android:layout_marginTop="186dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="524dp"
+        android:text="הכנס מייל:" />
+
+    <EditText
+
+        android:id="@+id/editMailtext"
+        android:layout_width="190dp"
+        android:layout_height="39dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-12dp"
+        android:layout_marginBottom="479dp"
+        android:inputType="textEmailAddress">
+
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/Hight_text"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="112dp"
+        android:layout_height="21dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="297dp"
+        android:layout_marginTop="262dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="448dp"
+        android:text="הכנס גובה:" />
+
+    <EditText
+
+        android:id="@+id/editHighttext"
+        android:layout_width="190dp"
+        android:layout_height="39dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="402dp"
+        android:inputType="number">
+
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/weight_text"
+        android:layout_width="141dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="352dp"
+        android:text="הכנס משקל:"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+
+        android:id="@+id/editweighttext"
+        android:layout_width="190dp"
+        android:layout_height="39dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-13dp"
+        android:layout_marginBottom="321dp"
+        android:inputType="number">
+
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/details_text"
+        android:textStyle="bold"
+        android:layout_width="207dp"
+        android:layout_height="195dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="202dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="-44dp" />
+
+    <Button
+        android:id="@+id/InputInfoCmedical"
+        android:textStyle="bold"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="147dp"
+        android:background="@drawable/buttonback"
+        android:text="הכנס" />
+
+    <Button
+        android:id="@+id/previous_button"
+        android:layout_width="105dp"
+        android:layout_height="46dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="320dp"
+        android:layout_marginBottom="-2dp"
+        android:background="@drawable/buttonback"
+        android:text="הקודם"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/PhoneNumber_text"
+        android:layout_width="269dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="433dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="264dp"
+        android:text="הכנס מספר פלאפון:"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+
+        android:id="@+id/editPhonetext"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_width="190dp"
+        android:layout_height="39dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="229dp"
+        android:inputType="textPersonName" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="135dp"
+        android:layout_height="113dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="241dp"
+        android:layout_marginBottom="564dp"
+        app:srcCompat="@drawable/doctormale" />
+
+
+</RelativeLayout>

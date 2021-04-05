@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/covback"
+    tools:context=".customers.CovActivity">
+
+
+    <TextView
+        android:id="@+id/cov_text"
+        android:textStyle="bold"
+        android:layout_width="226dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="682dp"
+        android:text="מעקב אחר קורונה"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/Cname_text"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="242dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="670dp"
+        android:text="הכנס שם מלא:"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+
+        android:id="@+id/editCnametext"
+        android:layout_width="190dp"
+        android:layout_height="39dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="621dp"
+        android:inputType="textPersonName">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/Id_text"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="277dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="590dp"
+        android:text="הכנס ת.ז:" />
+
+    <EditText
+
+        android:id="@+id/editIDtext"
+        android:layout_width="190dp"
+        android:layout_height="39dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="552dp"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/mail_text"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="112dp"
+        android:layout_height="21dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="297dp"
+        android:layout_marginTop="186dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="524dp"
+        android:text="הכנס מייל:" />
+
+    <EditText
+
+        android:id="@+id/editMailtext"
+        android:layout_width="190dp"
+        android:layout_height="39dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="480dp"
+        android:inputType="textEmailAddress">
+
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/details_text"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="248dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="477dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="6dp" />
+
+    <Button
+        android:id="@+id/Ccov_kbutton"
+        android:textStyle="bold"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="406dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="291dp"
+        android:background="@drawable/buttonback"
+        android:text="הכנס" />
+
+    <Button
+        android:id="@+id/previous_button"
+        android:layout_width="105dp"
+        android:layout_height="46dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="306dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/buttonback"
+        android:text="הקודם"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/PhoneNumber_text"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="213dp"
+        android:layout_marginTop="265dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="431dp"
+        android:text="הכנס מספר פלאפון:"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+
+        android:id="@+id/editPhonetext"
+        android:layout_width="190dp"
+        android:layout_height="39dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="390dp"
+        android:inputType="textPersonName" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="103dp"
+        android:layout_height="233dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="280dp"
+        android:layout_marginBottom="517dp"
+        app:srcCompat="@drawable/covid19" />
+
+
+</RelativeLayout>
