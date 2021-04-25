@@ -17,7 +17,7 @@ import android.widget.TextView;
 import com.example.testapp.R;
 
 public class CTaxActivity extends AppCompatActivity {
-    Button submit,previous;
+    Button submit,previous,uploadfilesTax;
     EditText NameEdit;
     EditText id;
     EditText mail;
@@ -33,6 +33,7 @@ public class CTaxActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tax);
         submit = (Button)findViewById(R.id.Cpackbutton);
         previous = (Button)findViewById(R.id.previous_button);
+        uploadfilesTax = (Button) findViewById(R.id.uploadfilestax);
 
         submit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -51,9 +52,19 @@ public class CTaxActivity extends AppCompatActivity {
                 openCustomerActivity();
             }
         });
+        uploadfilesTax.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openUploadFiles();
+            }
+        });
     }
     public void openCustomerActivity(){
         Intent intent = new Intent(this,CustomersActivity.class);
+        startActivity(intent);
+    }
+    public void openUploadFiles(){
+        Intent intent = new Intent(this,AdvanceFileUpload.class);
         startActivity(intent);
     }
 }
