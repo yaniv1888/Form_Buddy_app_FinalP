@@ -17,7 +17,7 @@ import android.widget.TextView;
 import com.example.testapp.R;
 
 public class CovActivity extends AppCompatActivity {
-    Button submitCov,previusCov;
+    Button submitCov,previusCov,uploadfilesCov;
     EditText NameEdit;
     EditText id;
     EditText mail;
@@ -31,6 +31,7 @@ public class CovActivity extends AppCompatActivity {
 
         submitCov = (Button)findViewById(R.id.Ccov_kbutton);
         previusCov = (Button) findViewById(R.id.previous_button);
+        uploadfilesCov = (Button)findViewById(R.id.uploadfilescov);
 
         submitCov.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -50,9 +51,19 @@ public class CovActivity extends AppCompatActivity {
                 openCustomerActivity();
             }
         });
+        uploadfilesCov.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Openuploadfilse();
+            }
+        });
     }
     public void openCustomerActivity(){
         Intent intent =  new Intent(this, CustomersActivity.class);
+        startActivity(intent);
+    }
+    public void Openuploadfilse(){
+        Intent intent = new Intent(this,AdvanceFileUpload.class);
         startActivity(intent);
     }
 }
