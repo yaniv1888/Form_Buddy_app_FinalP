@@ -144,12 +144,28 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="129dp"
+        android:layout_marginStart="239dp"
         android:layout_marginTop="461dp"
-        android:layout_marginEnd="156dp"
+        android:layout_marginEnd="46dp"
         android:layout_marginBottom="236dp"
         android:background="@drawable/buttonback"
         android:text="הכנס" />
+
+    <Button
+        android:id="@+id/uploadfilestax"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="461dp"
+        android:layout_marginEnd="201dp"
+        android:layout_marginBottom="236dp"
+        android:background="@drawable/buttonback"
+        android:text="העלאת קבצים"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/previous_button"
