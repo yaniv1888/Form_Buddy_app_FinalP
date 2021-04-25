@@ -2,6 +2,7 @@ package com.example.testapp.customers;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -9,16 +10,19 @@ import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
+import java.io.File;
+import java.io.IOException;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.testapp.R;
 
 public class CMedicalActivity extends AppCompatActivity {
-    Button submitmedical,previousM;
+
+    Button submitmedical,previousM,uplpadfiles;
     EditText NameEdit;
     EditText id;
     EditText mail;
@@ -30,22 +34,23 @@ public class CMedicalActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_c_medical);
-        submitmedical = (Button)findViewById(R.id.InputInfoCmedical);
-        previousM = (Button)findViewById(R.id.previous_button);
+        submitmedical = (Button) findViewById(R.id.InputInfoCmedical);
+        uplpadfiles = (Button) findViewById(R.id.upload_files);
+        previousM = (Button) findViewById(R.id.previous_button);
 
         submitmedical.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("WrongViewCast")
             public void onClick(View view) {
-                NameEdit = (EditText)findViewById(R.id.editCnametext);
-                id = (EditText)findViewById(R.id.editIDtext);
-                phonenumber = (EditText)findViewById(R.id.editPhonetext);
-                mail = (EditText)findViewById(R.id.editMailtext);
-                hight = (EditText)findViewById(R.id.editHighttext);
+                NameEdit = (EditText) findViewById(R.id.editCnametext);
+                id = (EditText) findViewById(R.id.editIDtext);
+                phonenumber = (EditText) findViewById(R.id.editPhonetext);
+                mail = (EditText) findViewById(R.id.editMailtext);
+                hight = (EditText) findViewById(R.id.editHighttext);
                 weight = (EditText) findViewById(R.id.editweighttext);
-                mText = (TextView)findViewById(R.id.details_text);
-                mText.setText("ברוך הבא" + "\n" +"השם:" + NameEdit.getText().toString() + "\n" + "ת.ז:" + id.getText().toString()
-                        + "\n" + "אימייל:" + mail.getText().toString() +  "\n" + "גובה:" + hight.getText().toString()
-                + "\n" + "משקל:" + weight.getText().toString()  + "\n" + "מספר פלאפון:" + phonenumber.getText().toString());
+                mText = (TextView) findViewById(R.id.details_text);
+                mText.setText("ברוך הבא" + "\n" + "השם:" + NameEdit.getText().toString() + "\n" + "ת.ז:" + id.getText().toString()
+                        + "\n" + "אימייל:" + mail.getText().toString() + "\n" + "גובה:" + hight.getText().toString()
+                        + "\n" + "משקל:" + weight.getText().toString() + "\n" + "מספר פלאפון:" + phonenumber.getText().toString());
             }
         });
         previousM.setOnClickListener(new View.OnClickListener() {
@@ -54,9 +59,22 @@ public class CMedicalActivity extends AppCompatActivity {
                 openCustActivity();
             }
         });
+        uplpadfiles.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openUploadActivity();
+
+            }
+        });
+
+
     }
     public void openCustActivity(){
         Intent intent = new Intent(this,CustomersActivity.class);
+        startActivity(intent);
+    }
+    public void openUploadActivity(){
+        Intent intent = new Intent(this,AdvanceFileUpload.class);
         startActivity(intent);
     }
 }
