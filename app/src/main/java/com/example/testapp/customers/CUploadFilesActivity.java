@@ -17,7 +17,6 @@ import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
@@ -41,7 +40,7 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
-public class MainActivity3 extends AppCompatActivity {
+public class CUploadFilesActivity extends AppCompatActivity {
 
     private static final int PERMISSION_REQUEST_CODE = 1;
     private static final int REQUEST_GALLERY = 200;
@@ -68,7 +67,7 @@ public class MainActivity3 extends AppCompatActivity {
         advacneUpload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity3.this,AdvanceFileUpload.class));
+                startActivity(new Intent(CUploadFilesActivity.this,AdvanceFileUpload.class));
             }
         });
 
@@ -116,7 +115,7 @@ public class MainActivity3 extends AppCompatActivity {
     private void filePicker(){
 
         //.Now Permission Working
-        Toast.makeText(MainActivity3.this, "File Picker Call", Toast.LENGTH_SHORT).show();
+        Toast.makeText(CUploadFilesActivity.this, "File Picker Call", Toast.LENGTH_SHORT).show();
         //Let's Pick File
         Intent opengallery=new Intent(Intent.ACTION_PICK);
         opengallery.setType("image/*");
@@ -130,7 +129,7 @@ public class MainActivity3 extends AppCompatActivity {
         public void onReceive(Context context, Intent intent) {
             long id=intent.getLongExtra(DownloadManager.EXTRA_DOWNLOAD_ID,-1);
             if(downloadId==id){
-                Toast.makeText(MainActivity3.this, "Download Completed", Toast.LENGTH_SHORT).show();
+                Toast.makeText(CUploadFilesActivity.this, "Download Completed", Toast.LENGTH_SHORT).show();
             }
         }
     };
@@ -142,16 +141,16 @@ public class MainActivity3 extends AppCompatActivity {
     }
 
     private void requestPermission(){
-        if(ActivityCompat.shouldShowRequestPermissionRationale(MainActivity3.this, Manifest.permission.WRITE_EXTERNAL_STORAGE)){
-            Toast.makeText(MainActivity3.this, "Please Give Permission to Upload File", Toast.LENGTH_SHORT).show();
+        if(ActivityCompat.shouldShowRequestPermissionRationale(CUploadFilesActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE)){
+            Toast.makeText(CUploadFilesActivity.this, "Please Give Permission to Upload File", Toast.LENGTH_SHORT).show();
         }
         else{
-            ActivityCompat.requestPermissions(MainActivity3.this,new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},PERMISSION_REQUEST_CODE);
+            ActivityCompat.requestPermissions(CUploadFilesActivity.this,new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},PERMISSION_REQUEST_CODE);
         }
     }
 
     private boolean checkPermission(){
-        int result= ContextCompat.checkSelfPermission(MainActivity3.this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        int result= ContextCompat.checkSelfPermission(CUploadFilesActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
         if(result== PackageManager.PERMISSION_GRANTED){
             return true;
         }
@@ -166,10 +165,10 @@ public class MainActivity3 extends AppCompatActivity {
         switch (requestCode){
             case PERMISSION_REQUEST_CODE:
                 if(grantResults.length>0 && grantResults[0]==PackageManager.PERMISSION_GRANTED){
-                    Toast.makeText(MainActivity3.this, "Permission Successfull", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CUploadFilesActivity.this, "Permission Successfull", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    Toast.makeText(MainActivity3.this, "Permission Failed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CUploadFilesActivity.this, "Permission Failed", Toast.LENGTH_SHORT).show();
                 }
         }
     }
@@ -178,7 +177,7 @@ public class MainActivity3 extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode==REQUEST_GALLERY && resultCode== Activity.RESULT_OK){
-            String filePath=getRealPathFromUri(data.getData(),MainActivity3.this);
+            String filePath=getRealPathFromUri(data.getData(), CUploadFilesActivity.this);
             Log.d("File Path : "," "+filePath);
             //now we will upload the file
             //lets import okhttp first
@@ -211,10 +210,10 @@ public class MainActivity3 extends AppCompatActivity {
             super.onPostExecute(s);
             progressBar.setVisibility(View.GONE);
             if(s.equalsIgnoreCase("true")){
-                Toast.makeText(MainActivity3.this, "File uploaded", Toast.LENGTH_SHORT).show();
+                Toast.makeText(CUploadFilesActivity.this, "File uploaded", Toast.LENGTH_SHORT).show();
             }
             else{
-                Toast.makeText(MainActivity3.this, "Failed Upload", Toast.LENGTH_SHORT).show();
+                Toast.makeText(CUploadFilesActivity.this, "Failed Upload", Toast.LENGTH_SHORT).show();
             }
         }
 
