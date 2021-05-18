@@ -4,22 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/cmailpackbackg"
     tools:context=".suppliers.SupTaxActivity">
 
-
     <TextView
-        android:id="@+id/sup_tax_text"
-        android:layout_width="257dp"
-        android:layout_height="72dp"
+        android:id="@+id/package_text"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="154dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="650dp"
-        android:text="מס' הכנסה - בבנייה"
-        android:textSize="20sp" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="676dp"
+        android:text="מס הכנסה"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/suppliers_medical"
+        android:layout_width="302dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="591dp"
+        android:text="רשימת משתמשים:"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <ListView
+        android:id="@+id/SupMeducal_List_ViewUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="601dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="0dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        />
 
 </RelativeLayout>
