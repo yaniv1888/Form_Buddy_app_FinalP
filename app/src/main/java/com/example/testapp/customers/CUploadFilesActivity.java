@@ -60,10 +60,7 @@ public class CUploadFilesActivity extends AppCompatActivity {
 
 
 
-
-
-
-        Button advacneUpload=findViewById(R.id.advanceupload);
+        Button advacneUpload=findViewById(R.id.upload2);
         advacneUpload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
