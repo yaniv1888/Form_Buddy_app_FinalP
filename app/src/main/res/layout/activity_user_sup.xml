@@ -9,6 +9,7 @@
 
     <TextView
         android:id="@+id/package_text"
+        android:textStyle="bold"
         android:layout_width="217dp"
         android:layout_height="41dp"
         android:layout_alignParentStart="true"
@@ -39,6 +40,7 @@
         android:layout_marginBottom="591dp"
         android:text="פרטי לקוח:"
         android:textSize="30dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
