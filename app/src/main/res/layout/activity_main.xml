@@ -10,7 +10,7 @@
 
 
     <TextView
-        android:id="@+id/actions_text"
+        android:id="@+id/title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -18,7 +18,26 @@
         android:layout_marginEnd="2dp"
         android:layout_marginBottom="608dp"
         android:text="בחר את השירות המבוקש:"
-        android:textColor="@color/design_default_color_background"
+        android:textStyle="bold"
+
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <TextView
+        android:id="@+id/actions_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="679dp"
+        android:text="ברוכים הבאים לForm_Buddy"
+        android:textStyle="bold"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
