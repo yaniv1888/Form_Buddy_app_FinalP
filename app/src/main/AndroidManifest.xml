@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.testapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
 
     <application
         android:allowBackup="true"
@@ -9,8 +17,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".customers.Upload"></activity>
-        <activity android:name=".customers.Constants" />
+        <activity android:name=".suppliers.UserSupCov2"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".suppliers.UserSupCov1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".suppliers.SupUserTax2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".suppliers.SupUserTax1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".suppliers.UserSup2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".suppliers.UserSupActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".customers.FilePath"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".customers.CUploadFilesActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".customers.AdvanceFileUpload"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".suppliers.ListUserPackActivity" />
         <activity
             android:name=".suppliers.LoginActivity"
@@ -67,6 +96,9 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashScreen"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -14,7 +14,7 @@ public class UserSupCov2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_sup_cov2);
         UserInfoRon = (TextView)findViewById(R.id.details_text);
-        UserInfoRon.setText( "ברוך הבא:" + "\n" + "שם:Ron" + "\n" +  "מספר ת.ז:3087566421" + "\n" + "מייל:R@gmail.com" + "\n" + "גובה:189" + "\n" + "משקל:80" + "\n" + "מספר פלאפון:0546811452" + "\n" +"צורכי טיפול:תוצאה בדיקת קורונה" );
+        UserInfoRon.setText( "ברוך הבא:" + "\n" + "שם:Ron" + "\n" +  "מספר ת.ז:3087566421" + "\n" + "מייל:R@gmail.com" + "\n" + "מספר פלאפון:0546811452" + "\n" +"צורכי טיפול:תוצאה בדיקת קורונה" );
 
     }
 }
